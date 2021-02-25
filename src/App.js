@@ -14,6 +14,9 @@ import { useState } from 'react';
 import { UserContext } from './Context/UserContext';
 import Footer from './layout/Footer';
 import Header from "./layout/Header"
+import FirebaseConfig from './config/FirebaseConfig';
+
+firebase.initializeApp(FirebaseConfig)
 
 function App() {
   const [user,setUser]  = useState(null)
