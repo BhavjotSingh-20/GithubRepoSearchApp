@@ -21,8 +21,8 @@ const Header = () => {
                     {context.user ? ( <NavItem>
                         <NavLink tag={Link} to="/" className="text-white">Logout</NavLink>
                     </NavItem>) : (<><NavItem> 
-                         <NavLink tag={Link} to="/" className="text-white">SignUp</NavLink></NavItem>
-                    <NavItem>  <NavLink tag={Link} to="/" className="text-white">SignIn</NavLink></NavItem></>)}
+                         <NavLink tag={Link} to="/signup" className="text-white">SignUp</NavLink></NavItem>
+                    <NavItem>  <NavLink tag={Link} to="/signin" className="text-white">SignIn</NavLink></NavItem></>)}
                     
                    
                 </Nav>
