@@ -19,7 +19,7 @@ const Header = () => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     {context.user ? ( <NavItem>
-                        <NavLink tag={Link} to="/" className="text-white">Logout</NavLink>
+                        <NavLink onClick={() => {context.setUser(null)}}  className="text-white">Logout</NavLink>
                     </NavItem>) : (<><NavItem> 
                          <NavLink tag={Link} to="/signup" className="text-white">SignUp</NavLink></NavItem>
                     <NavItem>  <NavLink tag={Link} to="/signin" className="text-white">SignIn</NavLink></NavItem></>)}
